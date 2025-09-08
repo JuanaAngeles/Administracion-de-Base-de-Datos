@@ -14,10 +14,11 @@ extent management local
 uniform size 1m;
 
 -- crear usuario para la aplicación
-create user app_ciclismo identified by AppCicl1
+create user app_ciclismo identified by password123
   default tablespace data_cyclis
   temporary tablespace temp_cyclis
   quota unlimited on data_cyclis;
 
 grant create session, create table, create view, create procedure,
+
       create sequence, create trigger to app_ciclismo;
